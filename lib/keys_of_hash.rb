@@ -5,7 +5,7 @@ class Hash
       matching = self.select{|k,v| v == arg}
       keys_out << matching.keys
     end
-    keys_out
+    keys_out = keys_out.flatten
   end
   
 end
